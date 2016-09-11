@@ -1,0 +1,109 @@
+/* Arduino Tutorial: How to use a magnetic contact switch 
+   Dev: Michalis Vasilakis // www.ardumotive.com // Date: 4/8/2016 */
+#include <Servo.h>
+int buttonPin =10;
+int trigPin = 13;
+int echoPin = 12;
+const int buzzer = 4; 
+const int sensor = 5;
+int button = 7;
+int buttonstate = 0;
+int state2= 0;  // 스위치 눌렸을때 상태
+int state; // 0 close - 1 open wwitch // 도어센서 
+int count = 0; // 서보모터 한번 실행되게 하는거
+int count2 = 0; // angle 각도 1번만 실행되게 하는거
+int count3 = 0;
+int count4 = 0;// 거리센서 angle 변화
+int angle = 0;
+int angle1 = 0;
+Servo myservo;
+void setup()
+{
+   myservo.attach(11);   
+   pinMode(trigPin, OUTPUT);
+   pinMode(echoPin, INPUT);
+   Serial.begin(9600);
+   pinMode(sensor, INPUT_PULLUP);
+   pinMode(button, INPUT);
+}
+
+void loop()
+{
+ float duration, distance;
+  digitalWrite(trigPin, HIGH);
+  delay(10);
+  digitalWrite(trigPin, LOW);
+  duration = pulseIn(echoPin, HIGH);
+  distance = ((float)(340 * duration) / 10000) / 2;
+  buttonstate = digitalRead(buttonPin);
+  state = digitalRead(sensor);
+Serial.print("\nDIstance:");
+  Serial.print(distance);
+
+if(buttonstate==HIGH){
+   if(state2 == 0){
+   state2 = 1;
+   delay(500);
+   Serial.print(state2);}
+   else if(state2 ==1){
+   state2 = 0;
+   Serial.print(state2);}
+      delay(500);
+
+}
+ 
+if(state2 == 0){  
+  if (state == HIGH){
+    count2=0;
+    tone(buzzer, 400);
+    if(count == 0){   
+   
+    myservo.write(angle);     //각도 0도로 움직임
+    count++;
+    }
+  }//door센서 때졌을때
+  else{
+    noTone(buzzer);
+    count = 0;
+  if(count2 == 0){
+ if(angle == 0){
+  
+ angle =180;
+ delay(100);
+ count2++;}
+ else{
+ 
+ angle = 0;
+delay(100);
+count2++;
+ }
+ }//count2 닫힘
+  }//door센서 붙어있을때.
+  delay(200);
+if(distance < 3){
+  count4 = 0;
+  tone(buzzer, 400); 
+  if(count3 == 0){   
+    myservo.write(angle1);     //각도 0도로 움직임
+    count3++;
+    }
+  }
+  else{   
+    count3 = 0;
+    if(count4 == 0){
+ if(angle1 == 0){  
+  angle1 =180;
+  delay(100);
+  count4++;
+  }
+    
+ else{
+  angle1 = 0;
+  delay(100);
+  count4++;
+  }
+    }
+}
+
+}//state2 닫힘
+}//loop닫힘
