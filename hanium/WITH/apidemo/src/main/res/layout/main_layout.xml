@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_layout"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#07b2e6">
+
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="뒤로가기"
+        android:id="@+id/button14"
+        android:layout_gravity="right"
+        android:onClick="back" />
+
+    <TextView
+        android:id="@+id/text_state"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Connection State"
+        android:background="#07b2e6"
+        android:textColor="#ffffff"
+        android:layout_marginTop="5dp"/>
+    <ScrollView
+        android:id="@+id/button_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:background="#07b2e6">
+            <Button
+                android:id="@+id/button_softap"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/camera_softap" />
+
+            <TextView
+                android:id="@+id/textConnectionStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IPAddress: "
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/textIPAddr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:textColor="#ffffff" />
+         <!--   <EditText
+                android:id="@+id/editTextIPAddr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="15"
+                android:text="192.168.43.1:6624"
+                />-->
+
+            <Button
+                android:id="@+id/button_cameraimage"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="사진첩" />
+            <Button
+                android:id="@+id/button_cameravideo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="동영상" />
+            <Button
+                android:id="@+id/button_downloadimage"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="사진 다운로드" />
+            <Button
+                android:id="@+id/button_downloadvideo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="동영상 다운로드" />
+
+            <Button
+                android:id="@+id/button_takePicture"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="사진찍기" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+

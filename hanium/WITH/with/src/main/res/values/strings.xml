@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">LOGIN</string>
+    <string name="join_us">Join us</string>
+    <string name="sucess">sucess</string>
+    <string name="run">Run</string>
+    <string name="select_menu">Select Menu</string>
+    <string name="_run_">RUN</string>
+    <string name="play_with_the_switch">Play with the Switch</string>
+    <string name="cansel">CANSEL</string>
+    <string name="stop">STOP</string>
+    <string name="STOP">STOP</string>
+</resources>

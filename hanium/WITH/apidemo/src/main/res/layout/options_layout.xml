@@ -1,0 +1,867 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#07b2e6">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/get_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="GET"
+                android:background="#52e2f5"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id = "@+id/get_clear_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/get_button"
+                android:text="CLEAR LIST"
+                android:background="#52e2f5"
+                android:textColor="#ffffff" />
+        </RelativeLayout>
+
+        <CheckBox
+            android:id="@+id/get_captureMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="captureMode"
+            android:textColor="#ffffff" />
+        <CheckBox
+            android:id="@+id/get_captureModeSupport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="captureModeSupport"
+            android:textColor="#ffffff" />
+        <CheckBox
+            android:id="@+id/get_exposureProgram"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="exposureProgram"
+            android:textColor="#ffffff" />
+        <CheckBox
+            android:id="@+id/get_exposureProgramSupport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="exposureProgramSupport"
+            android:textColor="#ffffff" />
+        <CheckBox
+            android:id="@+id/get_iso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="iso"
+            android:textColor="#ffffff" />
+        <CheckBox
+            android:id="@+id/get_isoSupport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="isoSupport"
+            android:textColor="#ffffff" />
+        <CheckBox
+            android:id="@+id/get_shutterSpeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="shutterSpeed"
+            android:textColor="#ffffff" />
+        <CheckBox
+            android:id="@+id/get_shutterSpeedSupport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="shutterSpeedSupport"
+            android:textColor="#ffffff" />
+        <CheckBox
+            android:id="@+id/get_aperture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="aperture"
+            android:textColor="#ffffff" />
+        <CheckBox
+            android:id="@+id/get_apertureSupport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="apertureSupport"
+            android:textColor="#ffffff" />
+        <CheckBox
+            android:id="@+id/get_whiteBalance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="whiteBalance"
+            android:textColor="#ffffff" />
+        <CheckBox
+            android:id="@+id/get_whiteBalanceSupport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="whiteBalanceSupport"
+            android:textColor="#ffffff" />
+        <CheckBox
+            android:id="@+id/get_exposureCompensation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="exposureCompensation"
+            android:textColor="#ffffff" />
+        <CheckBox
+            android:id="@+id/get_exposureCompensationSupport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="exposureCompensationSupport"
+            android:textColor="#ffffff" />
+        <CheckBox
+            android:id="@+id/get_fileFormat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="fileFormat"
+            android:textColor="#ffffff" />
+        <CheckBox
+            android:id="@+id/get_fileFormatSupport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="fileFormatSupport"
+            android:textColor="#ffffff" />
+        <CheckBox
+            android:id="@+id/get_exposureDelay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="exposureDelay"
+            android:textColor="#ffffff" />
+        <CheckBox
+            android:id="@+id/get_exposureDelaySupport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="exposureDelaySupport"
+            android:textColor="#ffffff" />
+        <CheckBox
+            android:id="@+id/get_captureInterval"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="captureInterval"
+            android:textColor="#ffffff" />
+        <CheckBox
+            android:id="@+id/get_captureIntervalSupport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="captureIntervalSupport"
+            android:textColor="#ffffff" />
+        <CheckBox
+            android:id="@+id/get_captureNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="captureNumber"
+            android:textColor="#ffffff" />
+        <CheckBox
+            android:id="@+id/get_captureNumberSupport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="captureNumberSupport"
+            android:textColor="#ffffff" />
+        <CheckBox
+            android:id="@+id/get_sleepDelay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sleepDelay"
+            android:textColor="#ffffff" />
+        <CheckBox
+            android:id="@+id/get_sleepDelaySupport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sleepDelaySupport"
+            android:textColor="#ffffff" />
+        <CheckBox
+            android:id="@+id/get_totalSpace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="totalSpace"
+            android:textColor="#ffffff" />
+        <CheckBox
+            android:id="@+id/get_remainingSpace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="remainingSpace"
+            android:textColor="#ffffff" />
+        <CheckBox
+            android:id="@+id/get_remainingPictures"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="remainingPictures"
+            android:textColor="#ffffff" />
+        <CheckBox
+            android:id="@+id/get_remainingVideoMinutes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="remainingVideoMinutes"
+            android:textColor="#ffffff" />
+        <CheckBox
+            android:id="@+id/get_gpsInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="gpsInfo"
+            android:textColor="#ffffff" />
+        <CheckBox
+            android:id="@+id/get_dateTimeZone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="dateTimeZone"
+            android:textColor="#ffffff" />
+        <CheckBox
+            android:id="@+id/get_hdr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hdr"
+            android:textColor="#ffffff" />
+        <CheckBox
+            android:id="@+id/get_hdrSupport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hdrSupport"
+            android:textColor="#ffffff" />
+        <CheckBox
+            android:id="@+id/get_gyro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="gyro"
+            android:textColor="#ffffff" />
+        <CheckBox
+            android:id="@+id/get_gyroSupport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="gyroSupport"
+            android:textColor="#ffffff" />
+        <CheckBox
+            android:id="@+id/get_gps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="gps"
+            android:textColor="#ffffff" />
+        <CheckBox
+            android:id="@+id/get_gpsSupport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="gpsSupport"
+            android:textColor="#ffffff" />
+        <CheckBox
+            android:id="@+id/get_imageStabilization"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="imageStabilization"
+            android:textColor="#ffffff" />
+        <CheckBox
+            android:id="@+id/get_imageStabilizationSupport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="imageStabilizationSupport"
+            android:textColor="#ffffff" />
+        <CheckBox
+            android:id="@+id/get_wifiPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="wifiPassword"
+            android:textColor="#ffffff" />
+        <CheckBox
+            android:id="@+id/get_delayProcessing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="delayProcessing"
+            android:textColor="#ffffff" />
+        <CheckBox
+            android:id="@+id/get_delayProcessingSupport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="delayProcessingSupport"
+            android:textColor="#ffffff" />
+        <CheckBox
+            android:id="@+id/get_sceneMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="_sceneMode"
+            android:textColor="#ffffff" />
+        <CheckBox
+            android:id="@+id/get_sceneModeSupport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="_sceneModeSupport"
+            android:textColor="#ffffff" />
+        <CheckBox
+            android:id="@+id/get_timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="_timer"
+            android:textColor="#ffffff" />
+        <CheckBox
+            android:id="@+id/get_timerSupport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="_timerSupport"
+            android:textColor="#ffffff" />
+        <CheckBox
+            android:id="@+id/get_storage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="_storage"
+            android:textColor="#ffffff" />
+        <CheckBox
+            android:id="@+id/get_batteryLevel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="_batteryLevel"
+            android:textColor="#ffffff" />
+        <CheckBox
+            android:id="@+id/get_angle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="_angle"
+            android:textColor="#ffffff" />
+        <CheckBox
+            android:id="@+id/get_angleSupport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="_angleSupport"
+            android:textColor="#ffffff" />
+        <CheckBox
+            android:id="@+id/get_audioChannel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="_audioChannel"
+            android:textColor="#ffffff" />
+        <CheckBox
+            android:id="@+id/get_audioChannelSupport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="_audioChannelSupport"
+            android:textColor="#ffffff" />
+        <CheckBox
+            android:id="@+id/get_cameraId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="_cameraId"
+            android:textColor="#ffffff" />
+        <CheckBox
+            android:id="@+id/get_cameraIdSupport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="_cameraIdSupport"
+            android:textColor="#ffffff" />
+        <CheckBox
+            android:id="@+id/get_lgISO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="_lgISO"
+            android:textColor="#ffffff" />
+        <CheckBox
+            android:id="@+id/get_lgISOSupport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="_lgISOSupport"
+            android:textColor="#ffffff" />
+
+        <CheckBox
+            android:id="@+id/get_lgShutterSpeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="_lgShutterSpeed"
+            android:textColor="#ffffff" />
+        <CheckBox
+            android:id="@+id/get_lgShutterSpeedSupport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="_lgShutterSpeedSupport"
+            android:textColor="#ffffff" />
+        <CheckBox
+            android:id="@+id/get_lgWhiteBalance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="_lgWhiteBalance"
+            android:textColor="#ffffff" />
+        <CheckBox
+            android:id="@+id/get_lgWhiteBalanceSupport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="_lgWhiteBalanceSupport"
+            android:textColor="#ffffff" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/getActionCamOptions"
+        android:orientation="vertical">
+        <CheckBox
+            android:id="@+id/get_burstshotNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="_burstshotNumber"
+            android:textColor="#ffffff" />
+        <CheckBox
+            android:id="@+id/get_burstshotNumberSupport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="_burstshotNumberSupport"
+            android:textColor="#ffffff" />
+        <CheckBox
+            android:id="@+id/get_loopingVideo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="_loopingVideo"
+            android:textColor="#ffffff" />
+        <CheckBox
+            android:id="@+id/get_loopingVideoSupport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="_loopingVideoSupport"
+            android:textColor="#ffffff" />
+        <CheckBox
+            android:id="@+id/get_flip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="_flip"
+            android:textColor="#ffffff" />
+        <CheckBox
+            android:id="@+id/get_flipSupport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="_flipSupport"
+            android:textColor="#ffffff" />
+        <CheckBox
+            android:id="@+id/get_longKey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="_longKey"
+            android:textColor="#ffffff" />
+        <CheckBox
+            android:id="@+id/get_longKeysSupport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="_longKeysSupport"
+            android:textColor="#ffffff" />
+        <CheckBox
+            android:id="@+id/get_manualVideoFrameRate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="_manualVideoFrameRate"
+            android:textColor="#ffffff" />
+        <CheckBox
+            android:id="@+id/get_manualVideoFrameRateSupport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="_manualVideoFrameRateSupport"
+            android:textColor="#ffffff" />
+        <CheckBox
+            android:id="@+id/get_timelapseSpeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="_timelapseSpeed"
+            android:textColor="#ffffff" />
+        <CheckBox
+            android:id="@+id/get_timelapseSpeedSupport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="_timelapseSpeedSupport"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/set_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="SET"
+                android:background="#52e2f5"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id = "@+id/set_clear_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/set_button"
+                android:text="CLEAR LIST"
+                android:background="#52e2f5"
+                android:textColor="#ffffff" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="captureMode"
+            android:textColor="#ffffff" />
+        <EditText
+            android:id="@+id/set_captureMode"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:tag="captureMode"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="exposureProgram"
+            android:textColor="#ffffff" />
+        <EditText
+            android:id="@+id/set_exposureProgram"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:tag="exposureProgram"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="iso"
+            android:textColor="#ffffff" />
+        <EditText
+            android:id="@+id/set_iso"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:tag="iso"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="shutterSpeed"
+            android:textColor="#ffffff" />
+        <EditText
+            android:id="@+id/set_shutterSpeed"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:tag="shutterSpeed"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="aperture"
+            android:textColor="#ffffff" />
+        <EditText
+            android:id="@+id/set_aperture"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:tag="aperture"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="whiteBalance"
+            android:textColor="#ffffff" />
+        <EditText
+            android:id="@+id/set_whiteBalance"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:tag="whiteBalance"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="exposureCompensation"
+            android:textColor="#ffffff" />
+        <EditText
+            android:id="@+id/set_exposureCompensation"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:tag="exposureCompensation"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="fileFormat"
+            android:textColor="#ffffff" />
+        <EditText
+            android:id="@+id/set_fileFormat"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:tag="fileFormat"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="speedOptimized"
+            android:textColor="#ffffff" />
+        <EditText
+            android:id="@+id/set_speedOptimized"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:tag="speedOptimized"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="previewFormat"
+            android:textColor="#ffffff" />
+        <EditText
+            android:id="@+id/set_previewFormat"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:tag="previewFormat"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="exposureDelay"
+            android:textColor="#ffffff" />
+        <EditText
+            android:id="@+id/set_exposureDelay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:tag="exposureDelay"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="captureInterval"
+            android:textColor="#ffffff" />
+        <EditText
+            android:id="@+id/set_captureInterval"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:tag="captureInterval"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="captureNumber"
+            android:textColor="#ffffff" />
+        <EditText
+            android:id="@+id/set_captureNumber"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:tag="captureNumber"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="sleepDelay"
+            android:textColor="#ffffff" />
+        <EditText
+            android:id="@+id/set_sleepDelay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:tag="sleepDelay"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="gpsInfo"
+            android:textColor="#ffffff" />
+        <EditText
+            android:id="@+id/set_gpsInfo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:tag="gpsInfo"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="dateTimeZone"
+            android:textColor="#ffffff" />
+        <EditText
+            android:id="@+id/set_dateTimeZone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:tag="dateTimeZone"/>
+        <EditText
+            android:id="@+id/set_dateTimeZoneWithID"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:tag="_dateTimeZoneWithID"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="hdr"
+            android:textColor="#ffffff" />
+        <EditText
+            android:id="@+id/set_hdr"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:tag="hdr"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="exposureBracket"
+            android:textColor="#ffffff" />
+        <EditText
+            android:id="@+id/set_exposureBracket"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:tag="exposureBracket"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="gyro"
+            android:textColor="#ffffff" />
+        <EditText
+            android:id="@+id/set_gyro"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:tag="gyro"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="gps"
+            android:textColor="#ffffff" />
+        <EditText
+            android:id="@+id/set_gps"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:tag="gps"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="imageStabilization"
+            android:textColor="#ffffff" />
+        <EditText
+            android:id="@+id/set_imageStabilization"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:tag="imageStabilization"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="wifiPassword"
+            android:textColor="#ffffff" />
+        <EditText
+            android:id="@+id/set_wifiPassword"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:tag="wifiPassword"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="delayProcessing"
+            android:textColor="#ffffff" />
+        <EditText
+            android:id="@+id/set_delayProcessing"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:tag="delayProcessing"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="_sceneMode"
+            android:textColor="#ffffff" />
+        <EditText
+            android:id="@+id/set_sceneMode"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:tag="_sceneMode"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="_timer"
+            android:textColor="#ffffff" />
+        <EditText
+            android:id="@+id/set_timer"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:tag="_timer"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="_angle"
+            android:textColor="#ffffff" />
+        <EditText
+            android:id="@+id/set_angle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:tag="_angle"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="_audioChannel"
+            android:textColor="#ffffff" />
+        <EditText
+            android:id="@+id/set_audioChannel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:tag="_audioChannel"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="_cameraId"
+            android:textColor="#ffffff" />
+        <EditText
+            android:id="@+id/set_cameraId"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:tag="_cameraId"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="_lgISO"
+            android:textColor="#ffffff" />
+        <EditText
+            android:id="@+id/set_lgISO"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:tag="_lgISO"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="_lgShutterSpeed"
+            android:textColor="#ffffff" />
+        <EditText
+            android:id="@+id/set_lgShutterSpeed"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:tag="_lgShutterSpeed"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="_lgWhiteBalance"
+            android:textColor="#ffffff" />
+        <EditText
+            android:id="@+id/set_lgWhiteBalance"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:tag="_lgWhiteBalance"/>
+        <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="_burstshotNumber"
+            android:textColor="#ffffff" />
+        <EditText
+            android:id="@+id/set_burstshotNumber"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:tag="_burstshotNumber"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="_loopingVideo"
+            android:textColor="#ffffff" />
+        <EditText
+            android:id="@+id/set_loopingVideo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:tag="_loopingVideo"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="_flip"
+            android:textColor="#ffffff" />
+        <EditText
+            android:id="@+id/set_flip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:tag="_flip"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="_longKey"
+            android:textColor="#ffffff" />
+        <EditText
+            android:id="@+id/set_longKey"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:tag="_longKey"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="_manualVideoFrameRate"
+            android:textColor="#ffffff" />
+        <EditText
+            android:id="@+id/set_manualVideoFrameRate"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:tag="_manualVideoFrameRate"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="_timelapseSpeed"
+            android:textColor="#ffffff" />
+        <EditText
+            android:id="@+id/set_timelapseSpeed"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:tag="_timelapseSpeed"/>
+    </LinearLayout>
+
+</ScrollView>

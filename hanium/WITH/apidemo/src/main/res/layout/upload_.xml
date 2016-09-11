@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+
+    android:weightSum="1"
+    android:background = "@drawable/sheep"
+    >
+
+
+
+    <ImageView
+
+        android:id="@+id/iv_upload_image"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="300dp"
+
+        android:background="#EEEEEE"
+
+        android:scaleType="fitXY"/>
+
+
+
+    <Button
+
+        android:id="@+id/btn_upload_image"
+
+        android:layout_width="116dp"
+
+        android:layout_height="30dp"
+
+        android:textSize="20dp"
+
+        android:textAllCaps="false"
+
+        android:layout_marginTop="20dp"
+
+        android:text="Upload"
+
+        android:layout_gravity="center"
+        android:background="#52e2f5"
+        android:layout_weight="0.08"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="200dp"
+        android:text="뒤로가기"
+        android:id="@+id/button16"
+        android:layout_gravity="right"
+        android:background="#52e2f5"
+        android:textColor="#ffffff"
+        android:onClick="button16" />
+
+
+</LinearLayout>

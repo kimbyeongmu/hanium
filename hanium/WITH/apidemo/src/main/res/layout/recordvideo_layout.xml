@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#07b2e6">
+
+    <Button
+        android:id = "@+id/button_takeSimpleVideo"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/capture_video"
+        android:layout_margin="20dp"
+        android:background="#52e2f5"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/button_takeLooping"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="20dp"
+        android:text="@string/capture_looping"
+        android:background="#52e2f5"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/button_takeTimelapse"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="20dp"
+        android:text="@string/capture_timelapse"
+        android:background="#52e2f5"
+        android:textColor="#ffffff" />
+
+</LinearLayout>

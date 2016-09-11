@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#07b2e6">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/get_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="GET"
+                android:background="#52e2f5"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id = "@+id/get_clear_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/get_button"
+                android:text="CLEAR LIST"
+                android:background="#52e2f5"
+                android:textColor="#ffffff" />
+        </RelativeLayout>
+        <CheckBox
+            android:id="@+id/get_wifiPW"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="_wifiPW"
+            android:textColor="#ffffff" />
+        <CheckBox
+            android:id="@+id/get_sound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="_sound"
+            android:textColor="#ffffff" />
+        <CheckBox
+            android:id="@+id/get_batteryLevel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="_batteryLevel"
+            android:textColor="#ffffff" />
+        <CheckBox
+            android:id="@+id/get_batteryState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="_batteryState"
+            android:textColor="#ffffff" />
+        <CheckBox
+            android:id="@+id/get_plugType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="_plugType"
+            android:textColor="#ffffff" />
+        <CheckBox
+            android:id="@+id/get_sleepTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="_sleepTime"
+            android:textColor="#ffffff" />
+        <CheckBox
+            android:id="@+id/get_totalCapacity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="_totalCapacity"
+            android:textColor="#ffffff" />
+        <CheckBox
+            android:id="@+id/get_freeCapacity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="_freeCapacity"
+            android:textColor="#ffffff" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/getActionCamSettings"
+            android:orientation="vertical">
+            <CheckBox
+                android:id="@+id/get_networkType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="_networkType"
+                android:textColor="#ffffff" />
+            <CheckBox
+                android:id="@+id/get_signalLevel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="_signalLevel"
+                android:textColor="#ffffff" />
+            <CheckBox
+                android:id="@+id/get_wifiLevel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="_wifiLevel"
+                android:textColor="#ffffff" />
+            <CheckBox
+                android:id="@+id/get_networkOperator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="_networkOperator"
+                android:textColor="#ffffff" />
+            <CheckBox
+                android:id="@+id/get_simCard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="_simCard"
+                android:textColor="#ffffff" />
+            <CheckBox
+                android:id="@+id/get_dataUsage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="_dataUsage"
+                android:textColor="#ffffff" />
+            <CheckBox
+                android:id="@+id/get_mobileDataOnOffStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="_mobileDataOnOffStatus"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/set_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="SET"
+                android:background="#52e2f5"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id = "@+id/set_clear_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/set_button"
+                android:text="CLEAR LIST"
+                android:background="#52e2f5"
+                android:textColor="#ffffff" />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="_wifiPW"
+            android:textColor="#ffffff" />
+        <EditText
+            android:id="@+id/set_wifiPW"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:tag="_wifiPW"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="_sound"
+            android:textColor="#ffffff" />
+        <EditText
+            android:id="@+id/set_sound"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:tag="_sound"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="_sleepTime"
+            android:textColor="#ffffff" />
+        <EditText
+            android:id="@+id/set_sleepTime"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:tag="_sleepTime"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="_enableMobileData"
+            android:textColor="#ffffff" />
+        <EditText
+            android:id="@+id/set_enableMobileData"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:tag="_enableMobileData"/>
+
+
+    </LinearLayout>
+
+</ScrollView>

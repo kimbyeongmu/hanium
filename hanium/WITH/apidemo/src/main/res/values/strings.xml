@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">FriendsCamera Sample</string>
+    <string name="action_delete_all">Delete All</string>
+    <string name="start_recording">Start Recording</string>
+    <string name="resume_recording">Resume Recording</string>
+    <string name="pause_recording">Pause Recording</string>
+    <string name="scanning">SCANNING</string>
+    <string name="wifi_status_connect">CONNECTED</string>
+    <string name="wifi_status_connecting">CONNECTING</string>
+    <string name="wifi_status_disconnect">DISCONNECTED</string>
+
+    <string name="camera_overap">OVER AP</string>
+    <string name="camera_softap">SOFT AP</string>
+
+    <string name="camera_info">CAMERA INFORMATION</string>
+    <string name="camera_state">CAMERA STATE</string>
+    <string name="check_update">CHECK FOR UPDATES</string>
+    <string name="camera_image_gallery">CAMERA IMAGE GALLERY</string>
+    <string name="camera_video_gallery">CAMERA VIDEO GALLERY</string>
+    <string name="download_image_gallery">DOWNLOAD IMAGE GALLERY</string>
+    <string name="download_video_gallery">DOWNLOAD VIDEO GALLERY</string>
+    <string name="options">CAMERA OPTIONS</string>
+    <string name="take_picture">CAMERA TAKE PICTURE</string>
+    <string name="recording">CAMERA RECORD VIDEO</string>
+    <string name="capture_interval">INTERVALSHOT</string>
+    <string name="capture_burstshot">BURSTSHOT</string>
+    <string name="capture_video">SIMPLE RECORDING</string>
+    <string name="capture_looping">LOOPING</string>
+    <string name="capture_timelapse">TIMELAPSE</string>
+    <string name="settings">CAMERA SETTINGS</string>
+    <string name="preview">CAMERA PREVIEW</string>
+
+    <string name="response">RESPONSE</string>
+    <string name="error">ERROR</string>
+    <string name="sc_peer_360cam">360 CAM</string>
+    <string name="lc_peer_ltecam">ActionCAM LTE</string>
+    <string name="stop">STOP</string>
+    <string name="back">뒤로가기</string>
+    <string name="new__">새로고침</string>
+
+</resources>
+

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#07b2e6">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="_loopingVideo (looping minutes)"
+        android:textColor="#ffffff" />
+    <EditText
+        android:id="@+id/edittext_loopingVideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="15"
+        android:hint="MAX / 120 / 60 / 20 / 5"
+        android:textColor="#ffffff" />
+    <Button
+        android:id="@+id/button_startLooping"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="캡쳐 시작"
+        android:background="#52e2f5"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="5dp"/>
+    <Button
+        android:id="@+id/button_stopLooping"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="캡쳐 중지"
+        android:background="#52e2f5"
+        android:textColor="#ffffff" />
+</LinearLayout>

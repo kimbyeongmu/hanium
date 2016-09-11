@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#07b2e6">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="_timelapseSpeed"
+        android:textColor="#ffffff" />
+    <EditText
+        android:id="@+id/edittext_timelapseSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="15"
+        android:inputType="number"
+        android:hint="5, 10, 15, 30, 60, 150, 300, 900, 1800"
+        android:textColor="#ffffff" />
+    <Button
+        android:id="@+id/button_startTimelapse"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="캡쳐 시작"
+        android:background="#52e2f5"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="5dp"/>
+    <Button
+        android:id="@+id/button_stopTimelapse"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="캡쳐 중지"
+        android:background="#52e2f5"
+        android:textColor="#ffffff" />
+</LinearLayout>

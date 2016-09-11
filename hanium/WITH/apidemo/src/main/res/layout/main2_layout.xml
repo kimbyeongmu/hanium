@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#07b2e6"
+    android:onClick="back1">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="비디오 보기"
+        android:id="@+id/button_video"
+        android:onClick="video_"
+        android:background="#52e2f5"
+        android:textColor="#ffffff"
+        android:layout_marginRight="5dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="사진 보기"
+        android:id="@+id/button_picture"
+        android:onClick="picture_"
+        android:background="#52e2f5"
+        android:textColor="#ffffff"
+        android:layout_marginRight="75dp" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="뒤로가기"
+        android:id="@+id/button15"
+        android:background="#52e2f5"
+        android:textColor="#ffffff"
+        android:onClick="back1"
+        android:layout_gravity="bottom" />
+
+</LinearLayout>

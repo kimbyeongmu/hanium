@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#07b2e6">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingRight="5dp"
+        android:background="#07b2e6">
+        <Button
+            android:id="@+id/button_startpreview"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Start Preview"
+            android:background="#52e2f5"
+            android:textColor="#ffffff"
+            android:layout_marginBottom="5dp"/>
+
+        <Button
+            android:id="@+id/button_stoppreview"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Stop Preview"
+            android:background="#52e2f5"
+            android:textColor="#ffffff"
+            android:layout_marginBottom="5dp"/>
+
+        <Button
+            android:id="@+id/button_startstillpreview"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Start JPEG Preview"
+            android:background="#52e2f5"
+            android:textColor="#ffffff"
+            android:layout_marginBottom="5dp"/>
+
+        <Button
+            android:id="@+id/button_stopstillpreview"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Stop JPEG Preview"
+            android:background="#52e2f5"
+            android:textColor="#ffffff" />
+
+
+        <SurfaceView
+            android:id="@+id/surfaceView"
+            android:layout_width="1280px"
+            android:layout_height="720px" />
+    </LinearLayout>
+</ScrollView>
