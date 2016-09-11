@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:contextClickable="false"
+    android:clickable="false"
+    android:background="#07b2e6">
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="뒤로가기"
+        android:id="@+id/button5"
+        android:layout_gravity="center"
+        android:onClick="home_back"
+        android:layout_marginLeft="101dp"
+        android:background="#52e2f5"
+        android:textColor="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="블루투스 통신"
+        android:id="@+id/button8"
+        android:onClick="gotoRssi"
+        android:layout_above="@+id/button11"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:background="#52e2f5"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="5dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="360 Camera"
+        android:id="@+id/button11"
+        android:layout_centerVertical="true"
+        android:layout_alignEnd="@+id/button8"
+        android:layout_alignParentStart="true"
+        android:onClick="one"
+        android:background="#52e2f5"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="5dp"/>
+
+    <Button
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="다운로드"
+        android:id="@+id/download"
+        android:onClick="down"
+        android:background="#52e2f5"
+        android:textColor="#ffffff"
+        android:layout_alignTop="@+id/button13"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="업로드"
+        android:id="@+id/button13"
+        android:onClick="upload"
+        android:background="#52e2f5"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/button11"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="실시간 영상 보기"
+        android:layout_marginTop="5dp"
+        android:id="@+id/button17"
+        android:onClick="live"
+        android:background="#52e2f5"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/download" />
+
+
+</RelativeLayout>

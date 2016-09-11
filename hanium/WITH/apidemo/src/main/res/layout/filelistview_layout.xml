@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="{relativePackage}.${activityClass}" >
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#07b2e6"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="5dip"
+        android:layout_above="@+id/switch1"
+        android:layout_marginBottom="105dp" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Switch"
+        android:id="@+id/switch1"
+        android:checked="false"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/list_view" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/new__"
+        android:id="@+id/new_button"
+        android:layout_alignStart="@+id/list_view"
+        android:onClick="new_"
+        android:layout_alignTop="@+id/list_view"
+        android:layout_marginTop="441dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="자동찍기"
+        android:id="@+id/autotake"
+        android:layout_above="@+id/switch1"
+        android:onClick="auto_"
+        android:layout_toStartOf="@+id/switch1" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="저장하기"
+        android:id="@+id/save"
+        android:layout_above="@+id/autotake"
+        android:layout_alignStart="@+id/autotake"
+        android:layout_alignEnd="@+id/autotake"
+        android:onClick="save_" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Button"
+        android:id="@+id/uploadButton"
+        android:layout_alignTop="@+id/save"
+        android:layout_alignEnd="@+id/list_view" />
+
+</RelativeLayout>
